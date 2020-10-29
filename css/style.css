@@ -2,21 +2,47 @@
 
 #wrap {background: #fff;}
 
+/* header */
 #header {width: 100%;}
 
 .black_line {width: 100%; height: 8px; background: #000;}
 
-.logo {display: flex; justify-content: center; align-items: center; padding: 30px 0 10px;}
-.logo h1 {font-size: 2.2rem; letter-spacing: .3rem;}
-.logo ul {position: absolute; display: flex; justify-content: center; align-items: center; right: 5%;}
-.logo li {font-size: 1.2rem; width: 40px; color: #444;}
+.header_top {position: relative; display: flex; justify-content: center; align-items: center; padding: 35px 0 10px;}
+.header_top h1 {font-size: 2.2rem; letter-spacing: .3rem;}
+.header_top ul {position: absolute; display: flex; justify-content: center; align-items: center; right: 5%;}
+.header_top li {font-size: 1.2rem; width: 40px; color: #444; cursor: pointer;}
 
-.navi {display: flex; justify-content: center; align-items: center; padding: 20px 0 30px;}
+/* login box */
+.login {position: absolute; width: 300px; height: 300px; background: #fff; z-index: 3; top: 100%; right: 2%; display: none; justify-content: center; align-items: center; box-shadow: 5px 5px 20px -5px #999; opacity: 0;}
+.login_top {display: flex; justify-content: space-between; align-items: center;}
+.login_top button {width: 25px; height: 25px; border-radius: 100%; background: #fff; border: none; font-size: .9rem;}
+.login_box strong {display: block; font-size: 1.1rem; padding: 10px 0;}
+.input_box input {width: 220px; height: 35px; margin: 5px 0; padding: 0 10px;}
+.input_box input::-webkit-input-placeholder {color: #999; font-size: .8rem;}
+.input_box input:-ms-input-placeholder {color: #999; font-size: .8rem;}
+.login_bt {width: 220px; height: 45px; margin-top: 2px; background: #000; color: #fff;}
+.login_bt:hover {background: #333;}
+.a_box {padding: 15px 0; text-align: center;}
+.a_box a {display: block; padding-bottom: 5px; color: #666;}
+.a_box p {font-size: .85rem;}
+
+/* menu box */
+.navi {display: flex; justify-content: center; align-items: center; padding-top: 20px; margin-bottom: 25px;}
 .menu {display: flex;}
-.menu li {width: 80px; text-align: center; font-size: .9rem;}
+.menu li {width: 95px; text-align: center; font-size: .9rem; cursor: pointer;}
+.menu_on:after {content: ""; display: block; width: 35px; border-bottom: 5px solid #333; margin: 20px auto 0; opacity: 1;}
 
-#slideBox {position: relative; width: 100%; height: 480px; display: flex; justify-content: center; align-items: center;}
-.slide_img {display: block; opacity: 0; position: absolute;}
+/* sub menu box */
+.sub_box {position: absolute; z-index: 2; background: #fff; width: 100%; height: 300px; display: none; justify-content: space-between; padding: 40px 270px; border-top: 1px solid #c0c0c0; opacity: 0;}
+.sub_close {position: absolute; top: 5%; right: 5%; font-size: .9rem; color: #666; cursor: pointer;}
+
+.sub_menu strong {font-size: .9rem; margin: 10px 0; display: block; color: #333;}
+.sub_menu li {padding-bottom: 8px; font-size: .85rem; color: #666; cursor: pointer;}
+.sub_menu li:hover {color: #333; font-weight: bold;}
+
+/* slide img box */
+#slideBox {position: relative; width: 100%; max-width: 1600px; margin: 0 auto; display: flex; justify-content: center; align-items: center; overflow: hidden;}
+.slide_img {display: block; opacity: 0; position: absolute; top: 0; left: 0;}
 .on {opacity: 1; transition: 1s;}
 #slideBox img {width: 100%;}
 
@@ -27,104 +53,33 @@
 .slide_title {position: absolute; right: 20%; top: 50%; transform: translateY(-50%); z-index: 1; text-align: center;}
 .slide_title strong {font-size: 1.1rem; color: #444;}
 .slide_title h1 {font-size: 2.6rem; padding-bottom: 10px;}
-.slide_title button {
-    padding: 12px 30px;
-    background: #fff;
-    border: none;
-    font-size: .8rem;
-    color: #444;
-}
-.play_bt {
-    width: 100px;
-    position: absolute;
-    left: 2%;
-    bottom: 0;
-    display: flex;
-}
-.slide_bt {
-    width: 100px;
-    position: absolute;
-    right: 2%;
-    bottom: 0;
-    display: flex;
-}
-.bt_box {
-    width: 45px;
-    height: 45px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 1px;
-    font-size: 1.2rem;
-    color: #999;
-    border: none;
-}
+.slide_title button {padding: 12px 30px; background: #fff; border: none; font-size: .8rem; color: #444;}
+
+.play_bt {width: 100px; position: absolute; left: 2%; bottom: 0; display: flex;}
+.slide_bt {width: 100px; position: absolute; right: 2%; bottom: 0; display: flex;}
+.bt_box {width: 40px; height: 40px; background: #fff; display: flex; justify-content: center; align-items: center; font-size: 1rem; color: #999; border: none;}
 .off {display: none;}
 
-#content {
-    width: 100%;
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+/* content */
+#content {width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 20px;}
 
-.section1 {
-    margin: 80px 0;
-}
-.section1 h2 {
-    text-align: center;
-    margin-bottom: 60px;
-    font-size: 2rem;
-    color: #333;
-}
-.se1_content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.se1_box {
-    width: 26%;
-    margin: 0 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    cursor: pointer;
-}
-.se1_box:hover img {
-    opacity: .7;
-}
-.se1_box:hover .se1_text p:nth-child(2) {
-    color: #555;
-}
-.se1_box:hover .se1_line {
-    background: #555;
-}
-.se1_box img {
-    width: 100%;
-}
-.se1_text {
-    width: 100%;
-    text-align: center;
-    padding: 15px 0 2px;
-}
-.se1_text p:nth-child(1) {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #444;
-}
-.se1_text p:nth-child(2) {
-    padding: 5px;
-    font-size: .9rem;
-    color: #999;
-}
-.se1_line {
-    width: 50px;
-    height: 2px;
-    background: #e9e9e9;
-}
+/* section1 */
+.section1 {margin: 80px 0;}
+.section1 h2 {text-align: center; margin-bottom: 60px; font-size: 2rem; color: #333;}
 
+.se1_content {width: 100%; display: flex; justify-content: center; align-items: center;}
+.se1_box {width: 26%; margin: 0 20px; display: flex; justify-content: center; flex-wrap: wrap; cursor: pointer;}
+.se1_box:hover img {opacity: .7;}
+.se1_box:hover .se1_text p:nth-child(2) {color: #555;}
+.se1_box:hover .se1_line {background: #555;}
+.se1_box img {width: 100%;}
+
+.se1_text {width: 100%; text-align: center; padding: 15px 0 2px;}
+.se1_text p:nth-child(1) {font-weight: bold; font-size: 1.2rem; color: #444;}
+.se1_text p:nth-child(2) {padding: 5px; font-size: .9rem; color: #999;}
+.se1_line {width: 50px; height: 2px; background: #e9e9e9;}
+
+/* section2 */
 .section2 {
     position: relative;
     padding: 35px 0;
@@ -155,6 +110,7 @@
 }
 
 .section3 {
+    position: relative;
     margin: 80px 0;
 }
 
@@ -164,11 +120,45 @@
     font-size: 2rem;
     color: #333;
 }
+.count {
+    position: absolute;
+    right: 0;
+    padding: 0 20px;
+    top: 10%;
+    font-size: 1.2rem;
+    color: #999;
+}
+.se3_slide {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.se3_slbt {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 1;
+}
+.se3_bt {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #dadada;
+}
 .se3_content {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 100%;
 }
 .se3_box {
     width: 26%;
@@ -215,9 +205,9 @@
     background: #000;
     margin-right: 5px;
 }
-.c1 {
-    background: #ffd8bf;
-}
+.c1 {background: #ffd8bf;}
+.c2 {background: #f9d7be;}
+.c3 {background: #a77a69;}
 .se3_color p {
     font-size: .9rem;
     color: #555;
@@ -286,6 +276,18 @@
     cursor: pointer;
 }
 
+.se4_text p:after {
+    content: "";
+    display: block;
+    width: 90px;
+    border-bottom: 1px solid #bcbcbc;
+    margin: 3px auto;
+    opacity: 0;
+}
+.se4_text p:hover:after {
+    opacity: 1;
+}
+
 #notice {
     margin: 80px 0;
     border-top: 1px solid #c0c0c0;
@@ -346,6 +348,7 @@
     padding: 160px 20px 80px;
 }
 .fo_box .logo h1 {
+    text-align: center;
     color: #fff;
 }
 
@@ -368,5 +371,20 @@
     color: #b8b8b8;
     font-size: .84rem;
     padding: 5px 0;
+    cursor: pointer;
+}
 
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+
+@media (max-width: 1280px) {
+    .sub_box {
+       
+        padding: 40px 100px;
+        
+    }
 }
