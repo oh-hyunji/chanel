@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* font import */
+@font-face {
+    font-family: 'chanel'; 
+    font-display: fallback;
+    src: url('../font/couture-bld.eot'),
+         url('../font/couture-bld.woff') format('woff'),
+         url('../font/couture-bld.ttf') format("truetype");
+}
+
+/* reset */
+* {box-sizing: border-box;}
+*:focus {outline: none;}​ 
+html,body{ margin: 0; padding: 0; width: 100%; height: 100%;}
+p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select {margin: 0; padding: 0;}
+body,input,textarea,select,button,table {font-family: 'Noto Sans KR', 'Noto Sans', '나눔고딕', NanumGothic, Malgun Gothic; font-style: normal; font-weight: normal; font-size: 14px;}
+img {display: block;}
+img,fieldset {border: 0;}
+ul,ol {list-style: none;}
+em,address {font-style: normal;}
+a {text-decoration: none;}
+a:hover,a:active,a:focus {text-decoration: none;}
+article,aside,dialog,footer,header,section,footer,nav,figure {display: block; margin: 0; padding: 0;} /* html5 tags */
+button {cursor: pointer;}
+
+/* font set */
+.chanel {font-family: 'chanel', sans-serif; font-style: normal; font-weight: normal;}

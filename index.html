@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OH! HYUNJI</title>
+    <!-- google web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- stylesheet --> 
+    <link rel="stylesheet" href="./css/resect.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+     <!-- jquery-3.5.0.js -->
+     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+     <!-- js -->
+     <script src="./js/index.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="black_line"></div>
+            <div class="logo">
+                <h1 class="chanel">CHANEL</h1>
+                <ul>
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-user"></i></li>
+                    <li><i class="fas fa-map-marker-alt"></i></li>
+                    <li><i class="fas fa-shopping-bag"></i></li>
+                </ul>
+            </div>
+            <nav class="navi">
+                <ul class="menu">
+                    <li>향수</li>
+                    <li>메이크업</li>
+                    <li>스킨케어</li>
+                    <li>맨즈 셀렉션</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="slideBox">
+            <a href="#" class="slide_img on"><img src="./img/header1.jpg" alt="이미지1"></a>
+            <a href="#" class="slide_img"><img src="./img/header2.jpg" alt="이미지2"></a>
+            <a href="#" class="slide_img"><img src="./img/header3.jpg" alt="이미지3"></a>
+            <a href="#" class="slide_img"><img src="./img/header4.jpg" alt="이미지4"></a>
+            <div class="slide_mark">
+                <div class="mark slct"></div>
+                <div class="mark"></div>
+                <div class="mark"></div>
+                <div class="mark"></div>
+            </div>
+            <div class="slide_title">
+                <strong>마드모아젤의 사회적 거리 두기</strong>
+                <h1>피트니스 에디션</h1>
+                <button>자세히 보기</button>
+            </div>
+            <div class="play_bt">
+                <button id="pause" class="bt_box"><i class="fas fa-pause"></i></button>
+                <button id="play" class="bt_box off"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="slide_bt">
+                <button id="left" class="bt_box"><i class="fas fa-chevron-left"></i></button>
+                <button id="right" class="bt_box"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div id="content">
+            <section class="section1">
+                <h2>아이코닉</h2>
+                <div class="se1_content">
+                    <div class="se1_box">
+                        <img src="./img/iconique_01.jpg" alt="아이코닉1">
+                        <div class="se1_text">
+                            <p>수블리마지</p>
+                            <p>제품보기</p>
+                        </div>
+                        <div class="se1_line"></div>
+                    </div>
+                    <div class="se1_box">
+                        <img src="./img/iconique_02.jpg" alt="아이코닉2">
+                        <div class="se1_text">
+                            <p class="chanel">#5</p>
+                            <p>제품보기</p>
+                        </div>
+                        <div class="se1_line"></div>
+                    </div>
+                    <div class="se1_box">
+                        <img src="./img/iconique_03.jpg" alt="아이코닉3">
+                        <div class="se1_text">
+                            <p>루쥬 코코</p>
+                            <p>제품보기</p>
+                        </div>
+                        <div class="se1_line"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+                <img src="./img/banner.jpg" alt="배너이미지">
+                <div class="se2_content">
+                    <strong>#<span class="chanel">CREATEYOURSELF</span></strong>
+                    <h2>샤넬 뷰티</h2>
+                    <p>제품, 팁, 이야기, 룩, 영감</p>
+                </div>
+            </section>
+            <section class="section3">
+                <h2>베스트 셀러</h2>
+                <div class="se3_content">
+                    <div class="se3_box">
+                        <img src="./img/best1.jpg" alt="아이코닉1">
+                        <div class="se3_text">
+                            <p>코코 마드모아젤</p>
+                            <p>로 프리베 - 밤을 위한 향수</p>
+                        </div>
+                        <div class="se3_color">
+                            <div class="color"></div>
+                            <p>FFF</p>
+                        </div>
+                        <div class="se3_price">
+                            <div class="price">
+                                <p>180,000</p>
+                                <p>구매하기</p>
+                            </div>
+                            <div class="se3_line"></div>
+                        </div>
+                    </div>
+                    <div class="se3_box">
+                        <img src="./img/best2.jpg" alt="아이코닉1">
+                        <div class="se3_text">
+                            <p>레 베쥬</p>
+                            <p>헬시 글로우 모이스처라이징 파운데이션</p>
+                        </div>
+                        <div class="se3_color color_on">
+                            <div class="color c1"></div>
+                            <p>BDO1</p>
+                        </div>
+                        <div class="se3_price">
+                            <div class="price">
+                                <p>79,000</p>
+                                <p>구매하기</p>
+                            </div>
+                            <div class="se3_line"></div>
+                        </div>
+                    </div>
+                    <div class="se3_box">
+                        <img src="./img/best3.jpg" alt="아이코닉1">
+                        <div class="se3_text">
+                            <p>로 리프트</p>
+                            <p>라 크렘 망 안티에이징 핸드 크림</p>
+                        </div>
+                        <div class="se3_color">
+                            <div class="color"></div>
+                            <p>FFF</p>
+                        </div>
+                        <div class="se3_price">
+                            <div class="price">
+                                <p>87,000</p>
+                                <p>구매하기</p>
+                            </div>
+                            <div class="se3_line"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="section4">
+                <div class="se4_content">
+                    <img src="./img/small_banner1.jpg" alt="작은배너이미지">
+                    <div class="se4_text">
+                        <strong>스페셜 에디션</strong>
+                        <p>자세히 보기&nbsp;&nbsp;&gt;</p>
+                    </div>
+                </div>
+                <div class="se4_content">
+                    <img src="./img/small_banner2.jpg" alt="작은배너이미지">
+                    <div class="se4_text">
+                        <strong>특별한 선물 포장</strong>
+                        <p>자세히 보기&nbsp;&nbsp;&gt;</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="notice">
+            <div class="no_content">
+                <div class="no_box">
+                    <strong>고객 센터</strong>
+                    <p>고객 센터로 전화 또는 온라인 고객 문의를 주실 경우 상담을 도와드릴 수 있도록 하겠습니다. 고객 센터(080-332-2700) 운영 시간: 월-금, 오전 9시-오후 6시</p>
+                </div>
+                <div class="no_box">
+                    <strong>특별한 쇼핑</strong>
+                    <p>모든 주문 제품은 샤넬만의 특별한 시그니처 포장 서비스로 제공되며, 3만원 이상 구매 시 무료 배송 됩니다.</p>
+                </div>
+                <div class="no_box">
+                    <strong>뉴스레터</strong>
+                    <p>뉴스레터 구독을 신청하시면 샤넬 뷰티의 최신 소식과 공식 온라인 스토어만의 특별한 혜택을 가장 먼저 만나보실 수 있습니다.</p>
+                </div>
+                <div class="no_text">
+                    <p>샤넬코리아 유한회사 |주소 : 서울특별시 중구 세종대로9길 41, 11층 (서소문동, 퍼시픽타워) | 사업자등록번호 : 106-81-29643</p>
+                    <p>대표이사 : 스테판티에리피에르블랑샤르 | 통신판매업신고번호 : 제 2016-서울중구-1165호 | 사업자정보조회</p>    
+                    <p>샤넬고객센터 : 080-332-2700 | customer.service@chanel.co.kr | 호스팅 제공자 : 아마존</p>
+                    <p>현금 등 구매에 관하여 FDK(02-006-00027) 구매안전(에스크로) 서비스에 가입하여 고객님의 안전한 거래를 보장하고 있습니다. | [가입사실확인]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="fo_box">
+            <div class="fo_content">
+                <div class="logo">
+                    <h1 class="chanel">CHANEL</h1>
+                </div>
+                <div class="fo_info">
+                    <div class="fo_text">
+                        <strong>샤넬 공식 홈페이지</strong>
+                        <ul>
+                            <li>오뜨 꾸뛰르</li>
+                            <li>패션</li>
+                            <li>시계</li>
+                            <li>화인 주얼리</li>
+                        </ul>
+                    </div>
+                    <div class="fo_text">
+                        <strong>하우스 오브 샤넬</strong>
+                        <ul>
+                            <li>법률 성명</li>
+                            <li>개인정보 처리방침</li>
+                            <li>이용약관</li>
+                            <li>인사이드 샤넬</li>
+                            <li>채용</li>
+                            <li>Fondation CHANEL</li>
+                            <li>Chanel News</li>
+                        </ul>
+                    </div>
+                    <div class="fo_text">
+                        <strong>부티크 찾기</strong>
+                        <ul>
+                            <li>매장 찾기</li>
+                        </ul>
+                    </div>
+                    <div class="fo_text">
+                        <strong>서비스</strong>
+                        <ul>
+                            <li>이벤트</li>
+                            <li>샤넬 코드 맴버십</li>
+                            <li>FAQ</li>
+                            <li>온라인 스토어 서비스</li>
+                            <li>샤넬 뷰티 부티크</li>
+                            <li>고객 문의</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fo_language">
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
