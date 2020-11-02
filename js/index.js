@@ -60,7 +60,7 @@ $(function(){
     });
 
     $('.se3_content').eq(0).css({'left':'0'});    
-    $('.se3_slbt #left').css({'opacity':'0', 'cursor':'none'});    
+    $('.se3_slbt #seLeft').css({'opacity':'0', 'cursor':'none'});    
 
     var page = 0;
     var pageNum = 1;
@@ -69,13 +69,13 @@ $(function(){
         if(page > 2) return;
 
         var btId = $(this).attr('id');
-        if(btId == 'right') {
-            $('.se3_slbt #left').css({'opacity':'1', 'cursor':'pointer'});    
+        if(btId == 'seRight') {
+            $('.se3_slbt #seLeft').css({'opacity':'1', 'cursor':'pointer'});    
             $('.se3_content').eq(page).css({'left':'-100%'});    
             page++;
             pageNum++;
         } else {
-            $('.se3_slbt #right').css({'opacity':'1', 'cursor':'pointer'});    
+            $('.se3_slbt #seRight').css({'opacity':'1', 'cursor':'pointer'});    
             $('.se3_content').eq(page).css({'left':'100%'});    
             page--;
             pageNum--;
@@ -87,8 +87,8 @@ $(function(){
 
         $('.se3_content').eq(page).animate({'left':'0'}, 500);
 
-        if(page < 1) $('.se3_slbt #left').css({'opacity':'0', 'cursor':'none'});
-        if(page > 1) $('.se3_slbt #right').css({'opacity':'0', 'cursor':'none'});
+        if(page < 1) $('.se3_slbt #seLeft').css({'opacity':'0', 'cursor':'none'});
+        if(page > 1) $('.se3_slbt #seRight').css({'opacity':'0', 'cursor':'none'});
     });
 
     $('.menu li').mouseenter(function(){
