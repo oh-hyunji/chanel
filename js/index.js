@@ -65,10 +65,10 @@ $(function(){
     var page = 0;
     var pageNum = 1;
     $('.se3_bt').on('click', function(){
-        if(page < 0) return;
-        if(page > 2) return;
-
         var btId = $(this).attr('id');
+        if(pageNum == 1 && btId == 'seLeft') return;
+        if(pageNum == 3 && btId == 'seRight') return;
+
         if(btId == 'seRight') {
             $('.se3_slbt #seLeft').css({'opacity':'1', 'cursor':'pointer'});    
             $('.se3_content').eq(page).css({'left':'-100%'});    
